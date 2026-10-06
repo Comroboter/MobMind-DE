@@ -30,6 +30,15 @@ Thumbs.db
 
 # Local secrets/tokens
 .github_token
+.env
+.env.*
+*.secret
+
+# MobMind-Config enthält den API-Key (z. B. Groq) – niemals committen.
+# Liegt normalerweise in <Minecraft>/config/mobmind.json bzw. run/config/mobmind.json.
+# Achtung: nicht "config/" ohne führenden Slash eintragen, sonst wäre src/.../config/ ignoriert.
+/config/
+mobmind.json
 
 # Gradle wrapper jar is usually committed, but keep local-only files
 local.properties
